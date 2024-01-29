@@ -5,9 +5,9 @@ const About = {
   fullName: Strings.fullName,
   designation: "Software Enginner & Fullstack Developer",
   description:
-    "Welcome to my portfolio! I'm a passionate full stack developer dedicated to creating and designing user-centric software that prioritizes ease of use. With proficiency in both front-end and back-end development across various platforms, I specialize in seamlessly integrating cutting-edge technologies while excelling in design.",
+    "Welcome to my portfolio! I am an enthusiastic full-stack developer, driven to develop and design user-centric software with an emphasis on user-friendliness. Possessing expertise in both front-end and back-end development across multiple technologies, I specialise in the seamless integration of cutting-edge technologies while demonstrating excellence in design.",
   followText: "Follow me here",
-  avatarUrl: "/images/profile.webp",
+  avatarUrl: "/images/profile.jpg",
 };
 
 export default About;

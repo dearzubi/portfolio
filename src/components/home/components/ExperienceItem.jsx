@@ -32,8 +32,14 @@ const ExperienceItem = ({ data }) => {
           {data.isCurrentJob ? "Present" : data.endDate}
         </p>
       </div>
+      {
+        data.shortDescription.length > 120 ? (
+          <ReadMoreText visibleTextCount={120} className="mt-4">{data.shortDescription}</ReadMoreText>
+        ) : <p className="text-base font-normal mt-4">{data.shortDescription}</p> 
+      }
 
-      <p className="text-base font-normal mt-4">{data.shortDescription}</p>
+
+      {/* <p className="text-base font-normal mt-4">{data.shortDescription}</p> */}
 
       {/* <button
         type="button"

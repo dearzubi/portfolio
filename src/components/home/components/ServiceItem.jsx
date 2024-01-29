@@ -21,9 +21,9 @@ const ServiceItem = ({ data }) => {
         }}
       />
 
-      <h5 className="font-bold mt-4">{data.title}</h5>
+      <h5 className="font-bold mt-0">{data.title}</h5>
 
-      <span className="w-[3rem] h-[0.125rem] bg-[var(--primaryColor)] mx-auto my-4"></span>
+      <span className="w-[3rem] h-[0.125rem] bg-[var(--primaryColor)] mx-auto my-0"></span>
 
       <ReadMoreText visibleTextCount={120}>{data.description}</ReadMoreText>
     </CardBox>

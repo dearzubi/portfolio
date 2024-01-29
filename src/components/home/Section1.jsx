@@ -28,13 +28,13 @@ const HomeSection1 = ({ id }) => {
               {About.description}
             </p>
 
-            <TalkButton />
+            {/* <TalkButton /> */}
 
             <Column classes="mt-8">
               <p className="text-md font-semibold">{About.followText}</p>
               <Row classes="mt-2 gap-2">
                 {socialLinks.map((link, index) => {
-                  return (
+                  return link.text.length > 0 && (
                     <Link
                       key={`social-link-${index}`}
                       href={link.url}

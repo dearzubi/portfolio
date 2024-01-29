@@ -13,7 +13,7 @@ const SkillItem = ({ item }) => {
         loading="lazy"
         placeholder="blur"
         blurDataURL={item.icon}
-        className="w-12 lg:w-16 h-auto aspect-square object-cover"
+        className="w-12 lg:w-16 h-auto aspect-square"
       />
 
       <h5 className="font-bold mt-8">{item.title}</h5>

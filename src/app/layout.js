@@ -11,9 +11,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Nikhil Rajput",
+  title: "Zubair Khalid",
   description:
-    "Nikhil Rajput is a proficient Full Stack Developer, skilled in seamlessly integrating front-end and back-end technologies while excelling in design.",
+    "Zubair Khalid is a proficient Full Stack Developer, skilled in seamlessly integrating front-end and back-end technologies while excelling in design.",
   robots: {
     index: true,
     follow: true,

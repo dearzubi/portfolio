@@ -15,7 +15,7 @@ const HomeSection4 = ({ id }) => {
           Skills
         </h2>
 
-        <WrappedBox classes="justify-items-center grid-cols-2 sm:grid-cols-3 mt-8">
+        <WrappedBox classes="justify-items-center grid-cols-1 min-[350px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mt-8">
           {skills.map((skill, index) => {
             return <SkillItem key={`skill-${index}`} item={skill} />;
           })}

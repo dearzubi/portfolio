@@ -1,23 +1,33 @@
 const skills = [
+  // {
+  //   title: "Flutter",
+  //   level: "⭐⭐⭐",
+  //   icon: "/logo/flutter.webp",
+  // },
   {
-    title: "Flutter",
+    title: "NodeJs",
     level: "⭐⭐⭐",
-    icon: "/logo/flutter.webp",
+    icon: "/logo/nodejs.webp",
   },
   {
-    title: "React.js",
+    title: "Javascript",
+    level: "⭐⭐⭐",
+    icon: "/logo/js.svg",
+  },
+  {
+    title: "Typescript",
+    level: "⭐⭐⭐",
+    icon: "/logo/ts.png",
+  },
+  {
+    title: "ReactJs",
     level: "⭐⭐⭐",
     icon: "/logo/reactjs.webp",
   },
   {
-    title: "Next.js",
+    title: "VueJs",
     level: "⭐⭐⭐",
-    icon: "/logo/nextjs.webp",
-  },
-  {
-    title: "Node.js",
-    level: "⭐⭐⭐",
-    icon: "/logo/nodejs.webp",
+    icon: "/logo/vuejs.svg",
   },
   {
     title: "HTML",
@@ -30,15 +40,20 @@ const skills = [
     icon: "/logo/css.webp",
   },
   {
-    title: "MongoDB",
+    title: "Databases",
     level: "⭐⭐",
-    icon: "/logo/mongodb.webp",
+    icon: "/logo/database.svg",
   },
   {
-    title: "SASS",
+    title: "Ethereum Blockchain",
     level: "⭐⭐",
-    icon: "/logo/sass.webp",
+    icon: "/logo/eth.svg",
   },
+  // {
+  //   title: "SASS",
+  //   level: "⭐⭐",
+  //   icon: "/logo/sass.webp",
+  // },
 ];
 
 export default skills;
