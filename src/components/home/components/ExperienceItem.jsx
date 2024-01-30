@@ -2,14 +2,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import Column from "@/components/common/Column";
 import ReadMoreText from "@/components/common/ReadMoreText";
+import {stringToSentences} from "@/utils/text-utils"
 
 const ExperienceItem = ({ data }) => {
   return (
-    <Column classes="bg-[var(--textColor10)] p-4 rounded-[var(--borderRadius)] w-full h-auto overflow-hidden">
-      <FontAwesomeIcon
+    <Column classes=" max-w-[800px] bg-[var(--textColor10)] p-4 rounded-[var(--borderRadius)] w-full h-auto overflow-hidden">
+      {/* <FontAwesomeIcon
         icon={faTrophy}
         className="text-2xl md:text-3xl text-[var(--primaryColor)]"
-      />
+      /> */}
 
       <p className="font-semibold text-lg mt-4">{data.designation}</p>
 
@@ -32,12 +33,15 @@ const ExperienceItem = ({ data }) => {
           {data.isCurrentJob ? "Present" : data.endDate}
         </p>
       </div>
-      {
-        data.shortDescription.length > 120 ? (
-          <ReadMoreText visibleTextCount={120} className="mt-4">{data.shortDescription}</ReadMoreText>
-        ) : <p className="text-base font-normal mt-4">{data.shortDescription}</p> 
-      }
-
+      <ul className="list-disc list-outside text-base font-normal mt-4 px-4">{
+        stringToSentences(data.shortDescription).map((line, index) => {
+          return (
+            <li key={`desc-line-${index}`}>
+              {line}
+            </li>
+          )
+        })
+      }</ul> 
 
       {/* <p className="text-base font-normal mt-4">{data.shortDescription}</p> */}
 

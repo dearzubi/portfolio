@@ -3,7 +3,7 @@ import Column from "@/components/common/Column";
 
 const SkillItem = ({ item }) => {
   return (
-    <Column classes="bg-[var(--textColor10)] p-4 rounded-[var(--borderRadius)] items-center justify-center text-center w-full min-w-[10rem] aspect-square overflow-hidden">
+    <Column classes="bg-[var(--textColor10)] px-2 py-4 rounded-[var(--borderRadius)] items-center justify-center text-center w-full min-w-[10rem] aspect-square overflow-hidden">
       <Image
         src={item.icon}
         alt={`skill-${item.title}`}

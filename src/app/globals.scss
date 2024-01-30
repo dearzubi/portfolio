@@ -691,19 +691,19 @@ h6 {
 }
 
 .drop_in {
-  animation: drop-in 1s ease 200ms backwards;
+  animation: drop-in 500ms ease 200ms backwards;
 }
 
 .drop_out {
-  animation: drop-out 1s ease 200ms backwards;
+  animation: drop-out 500ms ease 200ms backwards;
 }
 
 .slide_in {
-  animation: slide-in 1s ease 200ms backwards;
+  animation: slide-in 500ms ease 200ms backwards;
 }
 
 .slide_out {
-  animation: slide-out 1s ease 200ms backwards;
+  animation: slide-out 500ms ease 200ms backwards;
 }
 
 /* NAVBAR ----------------------------------------- */
@@ -916,4 +916,9 @@ h6 {
 .iconStyle:hover {
   animation: none;
   background: var(--whiteColor50);
+}
+
+
+li::marker {
+  font-size: 0.5rem;
 }

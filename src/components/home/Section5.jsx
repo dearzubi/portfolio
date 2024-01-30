@@ -13,8 +13,14 @@ const HomeSection5 = ({ id }) => {
     >
       <ConstraintedBox classNames="p-4 py-16">
         <h2 className="text-center mx-auto">
-          Recent Works
+          Projects
         </h2>
+
+        <span className="flex justify-center w-full text-[var(--secondaryColor)]">
+          {
+            'Several of my projects involve private clients and startups that have not yet been publicly launched. As a result, I currently lack permission to showcase them.'
+          }
+        </span>
 
         <WrappedBox classes="justify-items-center sm:grid-cols-2 mt-12">
           {projects.map((project, index) => {

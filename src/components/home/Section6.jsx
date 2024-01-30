@@ -8,7 +8,7 @@ import SocialButton from "./components/SocialButton";
 const HomeSection6 = ({ id }) => {
   return (
     <ResponsiveBox
-      classNames="bg-[var(--bgColor)] min-h-[90vh] items-center justify-center"
+      classNames="bg-[var(--bgColor)] min-h-[50vh] items-center justify-center"
       id={id}
     >
       <ConstraintedBox classNames="p-4 py-12">
@@ -17,9 +17,9 @@ const HomeSection6 = ({ id }) => {
         </h2>
 
         <Column classes="mt-12 w-full">
-          <WrappedBox classes="sm:grid-cols-2 w-full mx-auto gap-4">
+          <WrappedBox classes="sm:grid-cols-2 lg:grid-cols-3 w-full mx-auto gap-4">
             {socialLinks.map((link, index) => {
-              return (
+              return link.text.length > 0 && (
                 <SocialButton
                   key={`social-link-${index}`}
                   text={link.text}

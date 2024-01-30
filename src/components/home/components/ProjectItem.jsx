@@ -30,27 +30,32 @@ const ProjectItem = ({ project }) => {
         </Row>
 
         <h4 className="font-bold mt-4">{project.title}</h4>
+        {
+          project.repoType.length > 0 && (
+            <small
+              className="rounded-lg py-[0.15rem] px-[0.5rem] mt-2 font-normal capitalize text-center"
+              style={{
+                backgroundColor:
+                  project.repoType.toLowerCase() === "private"
+                    ? "var(--errorColor30)"
+                    : "var(--successColor30)",
+                border: `1px solid ${
+                  project.repoType.toLowerCase() === "private"
+                    ? "var(--errorColor50)"
+                    : "var(--successColor50)"
+                }`,
+                color:
+                  project.repoType.toLowerCase() === "private"
+                    ? "var(--errorColor)"
+                    : "var(--successColor)",
+              }}
+            >
+              {project.repoType}
+            </small>
+          )
+        }
 
-        <small
-          className="rounded-lg py-[0.15rem] px-[0.5rem] mt-2 font-normal capitalize text-center"
-          style={{
-            backgroundColor:
-              project.repoType.toLowerCase() === "private"
-                ? "var(--errorColor30)"
-                : "var(--successColor30)",
-            border: `1px solid ${
-              project.repoType.toLowerCase() === "private"
-                ? "var(--errorColor50)"
-                : "var(--successColor50)"
-            }`,
-            color:
-              project.repoType.toLowerCase() === "private"
-                ? "var(--errorColor)"
-                : "var(--successColor)",
-          }}
-        >
-          {project.repoType}
-        </small>
+        
 
         <Row classes="w-full items-center justify-center mt-4 gap-2">
           {project.githubUrl ? (

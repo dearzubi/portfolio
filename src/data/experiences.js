@@ -7,7 +7,7 @@ const experiences = [
     isCurrentJob: true,
     location: "Remote",
     shortDescription:
-      "Building sophisticated full-stack web solutions for global private clients, my approach integrates cutting-edge technologies such as NodeJs and Typescript. I create tailored, high-quality products, delivering seamless and intuitive digital experiences that align with individual client visions, and empower them for long-term success.",
+      "Building sophisticated full-stack web solutions for global private clients. My approach integrates cutting-edge technologies such as NodeJs and Typescript. I create tailored, high-quality products, delivering seamless and intuitive digital experiences that align with individual client visions, and empower them for long-term success.",
     description:
       "",
   },
@@ -19,7 +19,7 @@ const experiences = [
     isCurrentJob: false,
     location: "Lahore, Pakistan",
     shortDescription:
-      "Led a team of developers and researchers in the development of blockchain projects, employing technologies such as NodeJs, Javascript/Typescript, ExpressJs, VueJs, ReactJs, SQL Databases, Solidity Smart Contracts and the Ethereum blockchain. Conducted code reviews to ensure adherence to coding standards and optimal functionality. Enhanced the lab's collaborations by establishing partnerships with numerous national and multinational organizations.",
+      "Led a team of developers and researchers in the development of blockchain projects. Employed technologies such as NodeJs, Javascript/Typescript, ExpressJs, VueJs, ReactJs, SQL Databases, Solidity Smart Contracts and the Ethereum blockchain. Conducted code reviews to ensure adherence to coding standards and optimal functionality. Enhanced the lab's collaborations by establishing partnerships with numerous national and multinational organizations.",
     description:
       "",
   },
